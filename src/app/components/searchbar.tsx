@@ -11,7 +11,7 @@ export default function Searchbar() {
 		const searchParams = new URLSearchParams(formData as any);
 		const movieName = searchParams.get("movieName")!;
 		const actorName = searchParams.get("actorName")!;
-		const url = `/${encodeURIComponent(movieName)}/${encodeURIComponent(actorName)}`;
+		const url = `/age/${encodeURIComponent(movieName)}/${encodeURIComponent(actorName)}`;
 		// Redirect to URL
 		router.replace(url);
 	}
@@ -19,8 +19,11 @@ export default function Searchbar() {
 	return (
 		<div>
 			<form onSubmit={onSubmit}>
-				<input name="movieName" placeholder="Movie name" />
+				How old was
 				<input name="actorName" placeholder="Actor name" />
+				in
+				<input name="movieName" placeholder="Movie name" />
+				?
 				<button type="submit">Search</button>
 			</form>
 		</div>

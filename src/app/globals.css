@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +24,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+input {
+  color: rgb(var(--foreground-rgb));
+} */
+
+input {
+  border: none;
+  border-bottom: dashed blue;
+  padding: 0.5rem;
+}
+
+button[type="submit"] {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
 }
